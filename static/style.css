@@ -1,9 +1,11 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+
 html,
 body {
   background-color: #fdfefe !important;
   color: #23273f !important;
-  width: 100%;
-  height: 100%;
+  font-family: "Poppins", sans-serif !important;
 }
 a.nav-link {
   color: #23273f;
@@ -12,9 +14,6 @@ a.nav-link {
 a.nav-link:hover {
   color: #e52324;
 }
-.bottom {
-  color: #e52324 !important;
-  bottom: 0;
-  width: 100% !important;
-  position: fixed;
+img {
+  border: #23273f solid 2px;
 }

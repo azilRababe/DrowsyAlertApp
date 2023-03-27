@@ -1,13 +1,18 @@
 {% include 'header.html' %} {% include 'navbar.html'%}
 
-<figure class="figure mt-5 d-flex justify-content-center">
-  <img
-    src="{{ url_for('video_feed') }}"
-    class="figure-img img-fluid rounded"
-    alt="..."
-    width="640"
-    height="480"
-  />
-</figure>
+<div class="d-flex justify-content-center align-items-center">
+  <figure class="figure mt-5">
+    <img
+      src="{{ url_for('video_feed') }}"
+      class="figure-img img-fluid rounded"
+      alt="..."
+      width="640"
+      height="480"
+    />
+    <figcaption class="figure-caption text-end text-danger">
+      Stay Alert, Stay Safe.
+    </figcaption>
+  </figure>
+</div>
 
 {% include 'footer.html'%}
