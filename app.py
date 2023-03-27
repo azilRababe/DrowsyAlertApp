@@ -1,9 +1,10 @@
-from flask import Flask,render_template,Response
+from flask import Flask,render_template,Response,url_for
 import tensorflow as tf
 import cv2
 import numpy as np
 import os
 from playsound import playsound
+
 
 app=Flask(__name__)
 
@@ -67,6 +68,14 @@ def generate_frames():
 @app.route('/')
 def index():
     return render_template('feed.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/team')
+def team():
+    return render_template('team.html')
 
 @app.route('/video_feed')
 def video_feed():
